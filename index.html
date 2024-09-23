@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="GB2312">
     <title>Login Page</title>
     <script>
         function checkLogin() {
@@ -9,13 +8,13 @@
             var password = document.getElementById('password').value;
             
             if (username === 'admin' && password === 'admin') {
-                // µÇÂ¼³É¹¦
-                alert('µÇÂ¼³É¹¦£¡');
-                // ÕâÀï¿ÉÒÔÊ¹ÓÃwindow.location.hrefÖØ¶¨Ïòµ½ÁíÒ»¸öÒ³Ãæ
+                // ç™»å½•æˆåŠŸ
+                alert('ç™»å½•æˆåŠŸï¼');
+                // è¿™é‡Œå¯ä»¥ä½¿ç”¨window.location.hrefé‡å®šå‘åˆ°å¦ä¸€ä¸ªé¡µé¢
                 window.location.href = 'test.html';
             } else {
-                // µÇÂ¼Ê§°Ü
-                alert('ÓÃ»§Ãû»òÃÜÂë´íÎó£¡');
+                // ç™»å½•å¤±è´¥
+                alert('ç”¨æˆ·åæˆ–å¯†ç é”™è¯¯ï¼');
             }
         }
     </script>
@@ -24,15 +23,15 @@
     <div style="width: 300px; margin: 50px auto;">
         <form>
             <div>
-                <label for="username">ÓÃ»§Ãû:</label>
+                <label for="username">ç”¨æˆ·å:</label>
                 <input type="text" id="username" name="username" required>
             </div>
             <div>
-                <label for="password">ÃÜÂë:</label>
+                <label for="password">å¯†ç :</label>
                 <input type="password" id="password" name="password" required>
             </div>
             <div>
-                <button type="button" onclick="checkLogin()">µÇÂ¼</button>
+                <button type="button" onclick="checkLogin()">ç™»å½•</button>
             </div>
         </form>
     </div>
